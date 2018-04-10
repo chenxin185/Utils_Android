@@ -1,5 +1,8 @@
 package com.example.chenxin.utils_android.utils.request;
 
+import com.example.chenxin.utils_android.utils.buider.PostFormBuilder;
+import com.example.chenxin.utils_android.utils.callback.Callback;
+
 import java.io.UnsupportedEncodingException;
 import java.net.FileNameMap;
 import java.net.URLConnection;
@@ -13,8 +16,6 @@ import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.Request;
 import okhttp3.RequestBody;
-import wangbin.graduation.com.myapplication.buider.PostFormBuilder;
-import wangbin.graduation.com.myapplication.callback.Callback;
 
 /**
  * Created by momo on 2018/4/4.

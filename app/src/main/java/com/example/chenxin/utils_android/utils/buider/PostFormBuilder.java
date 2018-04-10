@@ -1,13 +1,15 @@
 package com.example.chenxin.utils_android.utils.buider;
 
+import com.example.chenxin.utils_android.utils.request.PostFormRequest;
+import com.example.chenxin.utils_android.utils.request.RequestCall;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import wangbin.graduation.com.myapplication.request.PostFormRequest;
-import wangbin.graduation.com.myapplication.request.RequestCall;
+
 
 /**
  * Created by momo on 2018/4/4.
@@ -19,7 +21,7 @@ public class PostFormBuilder extends OkhttpRequestBuider<PostFormBuilder> implem
 
     @Override
     public RequestCall build() {
-        return new PostFormRequest(url,true,params,headers,mFileInputs,id).build();
+        return new PostFormRequest(url, true, params, headers, mFileInputs, id).build();
     }
 
     @Override

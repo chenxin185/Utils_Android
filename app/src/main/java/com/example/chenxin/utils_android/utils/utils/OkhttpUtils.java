@@ -1,14 +1,16 @@
 package com.example.chenxin.utils_android.utils.utils;
 
 
+import com.example.chenxin.utils_android.utils.buider.GetBuilder;
+import com.example.chenxin.utils_android.utils.callback.Callback;
+import com.example.chenxin.utils_android.utils.request.RequestCall;
+
 import java.io.IOException;
 
 import okhttp3.Call;
 import okhttp3.OkHttpClient;
 import okhttp3.Response;
-import wangbin.graduation.com.myapplication.buider.GetBuilder;
-import wangbin.graduation.com.myapplication.callback.Callback;
-import wangbin.graduation.com.myapplication.request.RequestCall;
+
 
 /**
  * Created by momo on 2018/4/3.

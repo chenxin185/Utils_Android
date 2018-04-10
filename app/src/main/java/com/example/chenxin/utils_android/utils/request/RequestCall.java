@@ -1,12 +1,13 @@
 package com.example.chenxin.utils_android.utils.request;
 
+import com.example.chenxin.utils_android.utils.callback.Callback;
+import com.example.chenxin.utils_android.utils.utils.OkhttpUtils;
+
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
-import wangbin.graduation.com.myapplication.callback.Callback;
-import wangbin.graduation.com.myapplication.utils.OkhttpUtils;
 
 /**
  * Created by momo on 2018/4/3.
@@ -42,7 +43,7 @@ public class RequestCall {
     public Call buildCall(Callback callback){
         mRequest = generateRequest(callback);
         if (readTimeOut>0||writeTimeOut>0||connTimeOut>0){
-            readTimeOut = readTimeOut>0?readTimeOut:OkhttpUtils.DEFAULT_MILLISECONDS;
+            readTimeOut = readTimeOut>0?readTimeOut: OkhttpUtils.DEFAULT_MILLISECONDS;
             writeTimeOut = writeTimeOut>0?writeTimeOut:OkhttpUtils.DEFAULT_MILLISECONDS;
             connTimeOut = connTimeOut>0?connTimeOut:OkhttpUtils.DEFAULT_MILLISECONDS;
 

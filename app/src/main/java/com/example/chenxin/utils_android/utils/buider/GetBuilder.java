@@ -2,13 +2,14 @@ package com.example.chenxin.utils_android.utils.buider;
 
 import android.net.Uri;
 
+import com.example.chenxin.utils_android.utils.request.GetRequest;
+import com.example.chenxin.utils_android.utils.request.RequestCall;
+
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-import wangbin.graduation.com.myapplication.request.GetRequest;
-import wangbin.graduation.com.myapplication.request.RequestCall;
 
 /**
  * Created by momo on 2018/4/3.
@@ -21,7 +22,7 @@ public class GetBuilder extends OkhttpRequestBuider<GetBuilder> implements HasPa
         if (params!=null){
             url = appeandParams(url,params);
         }
-        return new GetRequest(url,tag,params,headers,id).build();
+        return new GetRequest(url, tag, params, headers, id).build();
     }
 
     private String appeandParams(String url, Map<String, String> params) {
